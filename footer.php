@@ -13,18 +13,42 @@
 
 	<footer id="colophon" class="site-footer">
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'portfolio' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'portfolio' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
+
+			
+
+				<ul>
+					<li><a href="https://linkedin.com/in/jsterlingdev" target="_blank">LinkedIn</a></li>
+					<li><a href="https://github.com/jsterling-dev" target="_blank">GitHub</a></li>
+					<li><a href="mailto:js@jarrodsterling.com" target="_blank">Email</a></li>
+				</ul>
+
+			<?php if ( is_single() ) : ?>
+						<a href="http://localhost:8888/portfolio/#work">Back To Work</a>
+			<?php	endif; ?>
+
+			<?php if ( is_front_page() ) : ?>
+						<a href="http://localhost:8888/portfolio">Top</a>
+			<?php	endif; ?>
+
+			<?php if ( is_page() ) : ?>
+						<a href="http://localhost:8888/portfolio">Home</a>
+			<?php	endif; ?>
+			
+
+
+
+
+				<p><span id="copyright">©</span> 2020 jarrodsterling.com</p>
+
 				<?php
 				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'portfolio' ), 'portfolio', '<a href="http://jarrodsterling.com">Jarrod Sterling</a>' );
+				printf( esc_html__( 'Custom WordPress Theme: %1$s by %2$s.', 'portfolio' ), "'Portfolio'", '<span class = theme><a href="http://jarrodsterling.com">Jarrod Sterling</a></span>' );
 				?>
 		</div><!-- .site-info -->
+
+	
+
+
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
@@ -32,3 +56,8 @@
 
 </body>
 </html>
+
+
+
+
+

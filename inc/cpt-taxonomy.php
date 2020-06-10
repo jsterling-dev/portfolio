@@ -45,10 +45,11 @@ function portfolio_register_custom_post_types() {
         'capability_type'    => 'post',
         'has_archive'        => false,
         'hierarchical'       => false,
-        'menu_position'      => 5,
+        'menu_position'      => 0,
         'menu_icon'          => 'dashicons-smiley',
         'supports'           => array( 'title', 'thumbnail', 'editor'),
     );
+    
     register_post_type( 'portfolio-projects', $args );
 
 }

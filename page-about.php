@@ -17,7 +17,11 @@ get_header();
 
 	<main id="primary" class="site-main">
 
-		<?php
+	<img class ="books" src="<?php bloginfo('template_url');?>/images/books.jpg" alt="Books">
+
+	<div class="vl"></div> <!--style .vl {border-left: 6px solid green; height: 500px;} -->
+
+<?php
 		while ( have_posts() ) :
 			the_post();
 
@@ -30,6 +34,12 @@ get_header();
 
 		endwhile; // End of the loop.
 		?>
+
+<?php if ( is_page() ) : ?>
+						<a href="https://jarrodsterling.com">Home</a>
+			<?php	endif; ?>
+
+		
 
 	</main><!-- #main -->
 

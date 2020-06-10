@@ -1,32 +1,38 @@
-<!--Sea to Sky front page place holder -->
+<?php get_header(); ?>
+	
+	<main id="primary" class="site-main">
+		
+			<div id="wrapper">
 
-get_header(); ?>
+				<section id="front-intro">
+					<img class ="polaroid" src="<?php bloginfo('template_url');?>/images/jarrod_profile.jpg" alt="Jarrod">
+					<h1>Jarrod Sterling</h1>
+					<p class="tagline">I am a UX Designer & Front-end Developer from Vancouver, Canada.</p>
+					<p class="about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam semper non metus in condimentum. Proin mattis erat eu odio ultrices laoreet. Fusce a commodo magna, ut eleifend nisi. Suspendisse tempor luctus libero vitae tincidunt.</p>
+					<p class="about">Proin mattis erat eu odio ultrices laoreet. Fusce a commodo magna, ut eleifend nisi. Suspendisse tempor luctus libero vitae tincidunt. In laoreet sapien eu dui faucibus tempor. Cras finibus luctus tortor, non gravida velit lacinia non. </p>
+					<a class ="learn_more" href="about">Learn More</a>
+					<ul>
+						<li><a href="https://linkedin.com/in/jsterlingdev" target="_blank">LinkedIn</a></li>
+						<li><a href="https://github.com/jsterling-dev" target="_blank">GitHub</a></li>
+						<li><a href="mailto:js@jarrodsterling.com" target="_blank">Email</a></li>
+					</ul>
 
-<main id="primary" class="site-main">
+				</section>
 
-	<div class="home-banner">
-		<?php while ( have_posts() ) : the_post(); ?>
-			<?php if ( function_exists ( 'get_field' ) ) :
-				the_post_thumbnail('full');
-				if ( get_field( 'banner_slogan' ) ) : ?>
-					<h1><?php the_field( 'banner_slogan' ); ?></h1>
-				<?php endif;
-			endif; ?>
+				<section class="front-work">
+					<h2 id="work">Work</h2>
+					<a href="sunrise"><img class ="sunrise" src="<?php bloginfo('template_url');?>/images/sunrise_framed.jpg" alt="Sunrise Brewery"></a>
+					<a href="sunrise">View Project</a>
 
-			<!-- Book now link -->
-			<?php $shop_page_url = get_permalink( woocommerce_get_page_id( 'shop' ) ); ?>
-			<a href=<?php echo $shop_page_url ?>>
-				<p class="book-now-button">Book Now</p>
-			</a>
-	</div><!-- end home-banner-->
+					<a href="sunrise"><img class ="sunrise" src="<?php bloginfo('template_url');?>/images/sunrise_framed.jpg" alt="Sunrise Brewery"></a>
+					<a href="sunrise">View Project</a>
 
-			<?php 
-			the_content();
-			get_template_part ( 'template-parts/content-our-tours' );
-			get_template_part( 'template-parts/testimonials' ); 
-			
-		endwhile; ?>
-			</main><!-- #main -->
+					<a href="sunrise"><img class ="sunrise" src="<?php bloginfo('template_url');?>/images/sunrise_framed.jpg" alt="Sunrise Brewery"></a>
+					<a href="sunrise">View Project</a>
+				</section>
 
+			</div> <!--end wrapper-->
+	</main>
+	
 <?php
 get_footer();

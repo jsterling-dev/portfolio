@@ -146,6 +146,20 @@ function portfolio_scripts() {
 	wp_enqueue_style( 'portfolio-style', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_style_add_data( 'portfolio-style', 'rtl', 'replace' );
 
+
+	wp_enqueue_script(
+			'flexslider',
+			get_template_directory_uri() . 'jquery.flexslider-mins .js',
+			array('jquery'),
+			'20200430',
+			true
+		);
+
+	wp_enqueue_style(
+			'flexslider',
+			get_template_directory_uri() . 'flexslider.css',
+			); 
+
 	wp_enqueue_script( 'portfolio-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
@@ -153,6 +167,8 @@ function portfolio_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'portfolio_scripts' );
+
+add_image_size('slider', 1500, 833, true);
 
 /**
  * Implement the Custom Header feature.
