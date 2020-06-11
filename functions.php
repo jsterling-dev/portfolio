@@ -148,16 +148,24 @@ function portfolio_scripts() {
 
 
 	wp_enqueue_script(
-			'flexslider',
-			get_template_directory_uri() . 'jquery.flexslider-mins .js',
+			'flexslider-script',
+			get_template_directory_uri() . '/js/jquery.flexslider-min.js',
 			array('jquery'),
 			'20200430',
 			true
 		);
 
+	wp_enqueue_script(
+			'slider',
+			get_template_directory_uri() . '/js/slider.js',
+			array('flexslider-script', 'jquery'),
+			'20200430',
+			true
+		);
+
 	wp_enqueue_style(
-			'flexslider',
-			get_template_directory_uri() . 'flexslider.css',
+			'flexslider-style',
+			get_template_directory_uri() . '/flexslider.css',
 			); 
 
 	wp_enqueue_script( 'portfolio-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );

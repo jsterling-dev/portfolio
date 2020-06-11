@@ -84,7 +84,7 @@ node_modules/
 # Ignore compiled CSS from repository
 *.css.map
 *.map
-style.css
+
 
 
 # Misc files to ignore #
