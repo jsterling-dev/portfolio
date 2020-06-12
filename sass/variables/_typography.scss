@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Blonde';
+    src: url('fonts/Blonde.otf');
+}
+
+$heading_font: 'Blonde';
+
+h1 {
+	font-family: $heading_font;
+	color: $purple;
+}
+
