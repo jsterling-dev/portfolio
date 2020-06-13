@@ -23,14 +23,18 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 */
 
 
+//Variables
+@import "variables/colors";
+@import "variables/columns";
+@import "variables/structure";
+@import "variables/typography";
+
+@import "mixins";
+
 @import "normalize";
 @import "box-sizing";
 @import "widgets";
-@import "mixins";
 
-
-
-//Folders
 @import "content/content";
 @import "elements/elements";
 @import "layouts/layouts";
@@ -49,8 +53,4 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 @import "utilities/accessibility";
 @import "utilities/alignments";
 
-//Variables
-@import "variables/colors";
-@import "variables/columns";
-@import "variables/structure";
-@import "variables/typography";
+

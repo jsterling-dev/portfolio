@@ -3,10 +3,17 @@
     src: url('fonts/Blonde.otf');
 }
 
-$heading_font: 'Blonde';
 
-h1 {
-	font-family: $heading_font;
-	color: $purple;
-}
+$heading: 'Blonde';
 
+
+
+
+
+// stylelint-disable value-keyword-case
+$font__main: 'Blonde';
+// stylelint-enable value-keyword-case
+$font__code: monaco, consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+$font__pre: "Courier 10 Pitch", courier, monospace;
+$font__line-height-body: 1.5;
+$font__line-height-pre: 1.6;

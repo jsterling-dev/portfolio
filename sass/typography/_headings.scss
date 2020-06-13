@@ -6,3 +6,10 @@ h5,
 h6 {
 	clear: both;
 }
+
+h1 {
+	font-family: $heading;
+	font-size: 90px;
+	color: red;
+	text-transform: uppercase;
+}
