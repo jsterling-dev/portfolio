@@ -1,3 +1,51 @@
-#wrapper {
-	background-color: $lightpurple;
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background-image: linear-gradient(-45deg, $shadow,$lightpurple);
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+.polaroid {
+	height:40%;
+	width:40%;
+}
+
+p.tagline {
+	font-size: 2rem;
+	letter-spacing: 1px;
+}
+
+p.about {
+	font-size:1.4em;
+	letter-spacing: 1.2px;
+}
+
+.logo {
+	width: 20%;
+	height: 20%;
+}
+
+.books {
+	height: 40%;
+	width: 40%;
+}
+
+ul {
+	display: flex;
+}
+
+li {
+	font-size: 1.5rem;
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+li a:hover {
+	color: $red;
 }

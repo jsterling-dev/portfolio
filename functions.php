@@ -207,3 +207,13 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+add_filter( 'get_custom_logo', 'change_logo_class' );
+
+
+function change_logo_class( $html ) {
+
+    $html = str_replace( 'custom-logo', 'logo', $html );
+    $html = str_replace( 'custom-logo-link', 'logo', $html );
+
+    return $html;
+}
