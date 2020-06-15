@@ -43,6 +43,7 @@
 .flexslider {
   margin: 0;
   padding: 0;
+
 }
 .flexslider .slides > li {
   display: none;
@@ -74,7 +75,8 @@ html[xmlns] .flexslider .slides {
  * ====================================================================================================================*/
 .flexslider {
   max-width: 1200px;
-  margin: auto;
+  
+  margin: 15% auto;
   background: #fff;
   position: relative;
   zoom: 1;
@@ -95,6 +97,7 @@ html[xmlns] .flexslider .slides {
 }
 .flex-viewport {
   max-height: 100%;
+
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
   -ms-transition: all 1s ease;

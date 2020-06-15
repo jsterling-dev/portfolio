@@ -29,17 +29,14 @@ get_header();
 
 	<div class="entry-content">
 
-		<?php 
-		$link = get_field('url');
-		if( $link ): ?>
-		    <a class="button" href="<?php echo esc_url( $link ); ?>">View Live Site</a>
-		<?php endif; 
+		
+		<?php  
 
 		endwhile; ?>
 
-		<h3><?php the_field('header_scope');?></h3>
+		<h3 class="right-h3"><?php the_field('header_scope');?></h3>
 		<p><?php the_field('scope'); ?></p>
-		<h3><?php the_field('header_goal');?></h3>
+		<h3 class="left-h3"><?php the_field('header_goal');?></h3>
 		<p><?php the_field('goal'); ?></p>
 
 		<?php if( have_rows('slider') ): ?> 
@@ -54,13 +51,21 @@ get_header();
 			</div>
 		<?php endif; ?>
 
-		<h3><?php the_field('header_process');?></h3>
+		<h3 class="right-h3"><?php the_field('header_process');?></h3>
 		<p><?php the_field('process'); ?></p>
-		<h3><?php the_field('header_hindsight');?></h3>
+		<h3 class="left-h3"><?php the_field('header_hindsight');?></h3>
 		<p><?php the_field('hindsight'); ?></p>
+
+
 
 		
 	</div><!-- .entry-content -->
+		<?php 
+		$link = get_field('url');
+			if( $link ): ?>
+		    <a class="learn-more" id="live-site" href="<?php echo esc_url( $link ); ?>">View Live Site</a> <?php
+		    endif; 
+		    ?>
 
 	
 </article><!-- #post-<?php the_ID(); ?> -->

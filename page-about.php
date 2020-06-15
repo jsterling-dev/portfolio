@@ -36,7 +36,7 @@ get_header();
 		?>
 
 <?php if ( is_page() ) : ?>
-						<a href="https://jarrodsterling.com">Home</a>
+						<a class="learn-more" id="home" href="https://jarrodsterling.com">Home</a>
 			<?php	endif; ?>
 
 		
